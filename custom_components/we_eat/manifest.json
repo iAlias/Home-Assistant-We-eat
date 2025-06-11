@@ -1,0 +1,9 @@
+{
+    "domain": "we_eat",
+    "name": "We Eat Menu",
+    "documentation": "https://github.com/example/we_eat",
+    "dependencies": [],
+    "codeowners": [],
+    "version": "0.1.0",
+    "requirements": []
+}
