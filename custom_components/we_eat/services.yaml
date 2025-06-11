@@ -1,0 +1,12 @@
+add_recipe:
+  description: "Add a recipe to the menu list."
+  fields:
+    recipe:
+      description: "Name of the recipe"
+      example: "Lasagne"
+remove_recipe:
+  description: "Remove a recipe from the menu list."
+  fields:
+    recipe:
+      description: "Name of the recipe"
+      example: "Pizza"
