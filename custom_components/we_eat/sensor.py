@@ -13,7 +13,7 @@ from . import DOMAIN, CONF_RECIPES
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the We Eat sensor."""
     sensor = WeEatSensor(hass.data[DOMAIN][CONF_RECIPES])
-    async_add_entities([sensor])
+    async_add_entities([sensor], True)
 
 class WeEatSensor(SensorEntity):
     """Representation of the We Eat sensor."""
@@ -21,6 +21,7 @@ class WeEatSensor(SensorEntity):
     def __init__(self, recipes: list[str]) -> None:
         self._recipes = recipes
         self._state = random.choice(recipes)
+        self._attr_unique_id = "we_eat_menu"
 
     async def async_added_to_hass(self) -> None:
         async_dispatcher_connect(self.hass, "we_eat_update", self.pick_random_recipe)

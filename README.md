@@ -4,7 +4,7 @@ This custom integration shows a random recipe from a configurable list. The reci
 
 ## Installation
 
-1. Copy the `custom_components/we_eat` folder to your Home Assistant `config/custom_components` directory **or** add this repository as a custom integration in HACS.
+1. Copy the `custom_components/we_eat` folder to your Home Assistant `config/custom_components` directory **or** add this repository as a custom integration in HACS (thanks to the included `hacs.json`).
 2. Copy `we_eat_card.js` to your `www` folder and add the resource to your Lovelace configuration.
 
 ## Configuration
