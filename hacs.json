@@ -1,0 +1,6 @@
+{
+  "name": "We Eat Menu",
+  "content_in_root": false,
+  "domains": ["we_eat"],
+  "homeassistant": "2023.0.0"
+}

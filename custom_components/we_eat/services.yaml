@@ -10,3 +10,11 @@ remove_recipe:
     recipe:
       description: "Name of the recipe"
       example: "Pizza"
+set_recipes:
+  description: "Replace the whole list of recipes."
+  fields:
+    recipes:
+      description: "List of recipes"
+      example:
+        - Spaghetti
+        - Pizza
