@@ -57,7 +57,14 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
             hass.data[DOMAIN][CONF_RECIPES].remove(recipe)
             hass.helpers.dispatcher.async_dispatcher_send("we_eat_update")
 
+    async def handle_set(call: Any) -> None:
+        recipes = call.data.get(CONF_RECIPES, [])
+        if isinstance(recipes, list):
+            hass.data[DOMAIN][CONF_RECIPES] = list(recipes)
+            hass.helpers.dispatcher.async_dispatcher_send("we_eat_update")
+
     hass.services.async_register(DOMAIN, "add_recipe", handle_add)
     hass.services.async_register(DOMAIN, "remove_recipe", handle_remove)
+    hass.services.async_register(DOMAIN, "set_recipes", handle_set)
 
     return True
