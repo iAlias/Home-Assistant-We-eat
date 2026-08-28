@@ -1,13 +1,11 @@
 {
-    "domain": "we_eat",
-    "name": "We Eat Menu",
-    "version": "0.1.0",
-    "documentation": "https://github.com/iAlias/Home-Assistant-We-eat",
-    "issue_tracker": "https://github.com/iAlias/Home-Assistant-We-eat/issues",
-    "dependencies": [],
-    "codeowners": [
-        "@iAlias"
-    ],
-    "requirements": [],
-    "iot_class": "local_polling"
+  "domain": "we_eat",
+  "name": "We Eat Menu",
+  "codeowners": ["@iAlias"],
+  "dependencies": [],
+  "documentation": "https://github.com/iAlias/Home-Assistant-We-eat",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/iAlias/Home-Assistant-We-eat/issues",
+  "requirements": [],
+  "version": "0.1.0"
 }
